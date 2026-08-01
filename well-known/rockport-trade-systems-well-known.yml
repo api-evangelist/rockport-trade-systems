@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: probed
+host: https://www.rockporttradesystems.com
+note: >-
+  All /.well-known/ discovery endpoints and /llms.txt were probed over HTTP and
+  returned 403 (openresty) — the host blocks automated clients. HTTPS could not
+  be completed from the probe environment. No documents were retrievable; no raw
+  files saved. Recorded for auditability.
+documents:
+- path: /.well-known/security.txt
+  status: 403
+- path: /.well-known/openid-configuration
+  status: 403
+- path: /.well-known/oauth-authorization-server
+  status: 403
+- path: /.well-known/api-catalog
+  status: 403
+- path: /.well-known/ai-plugin.json
+  status: 403
+- path: /llms.txt
+  status: 403

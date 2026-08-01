@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: probed
+source: dig + TLS/HTTP probe of apis.yml Website host
+note: >-
+  HTTPS handshake to the web host could not be completed from the probe
+  environment (TLS SSL_ERROR_SYSCALL) and HTTP returns 403 (openresty) to
+  automated clients, so TLS/HSTS posture could not be measured. DNS-level
+  records below were resolved via dig and are authoritative. Absence of a
+  record is valid, recorded data.
+hosts:
+- host: www.rockporttradesystems.com
+  https: false
+  reachable: false
+  tls_version: null
+  hsts: null
+  note: TLS handshake blocked / HTTP 403 to automated clients
+domains:
+- domain: rockporttradesystems.com
+  nameservers:
+  - ns75.worldnic.com
+  - ns76.worldnic.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
+  dmarc_policy: null

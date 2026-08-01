@@ -1,9 +1,29 @@
 aid: rockport-trade-systems
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rockport-trade-systems.png
 name: Rockport Trade Systems
-description: Rockport Trade Systems is a company surfaced as a portfolio company of insight-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Rockport Trade Systems is a global trade management (GTM) software company providing customs
+  compliance, import and export management, and trade-content solutions to enterprises. Surfaced as a
+  portfolio company of Insight Partners, it was added to the API Evangelist network for enrichment. As of
+  this pass the company operates a corporate marketing website but publishes no public developer API,
+  documentation, or specification surface, and the site actively blocks automated access (HTTP 403), so
+  no API artifacts could be harvested.
 url: https://raw.githubusercontent.com/api-evangelist/rockport-trade-systems/refs/heads/main/apis.yml
+common:
+- type: Website
+  url: https://www.rockporttradesystems.com
+- type: DomainSecurity
+  url: security/rockport-trade-systems-domain-security.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,12 +32,23 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Global Trade Management
+- Trade Compliance
+- Customs
+- Import Export
+- Supply Chain
+- Logistics
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
